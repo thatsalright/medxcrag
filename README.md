@@ -1,4 +1,3 @@
-# medxcrag
 # MEDXCRAG：医学跨模态检索增强的X光报告生成方法
 
 ## Installation
