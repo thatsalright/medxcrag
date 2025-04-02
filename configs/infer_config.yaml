@@ -1,0 +1,7 @@
+feature_dim: 512
+hidden_dim: 512
+num_time_steps: 5
+temperature: 0.05
+
+# 评估设置
+top_k: 5

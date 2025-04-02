@@ -1,0 +1,29 @@
+# 数据设置
+train_image_dir: "../dataset/mimic-cxr/train/images"
+train_report_file: "../dataset/mimic-cxr/train/train_report.csv"
+val_image_dir: "../dataset/mimic-cxr/val/images"
+val_report_file: "../dataset/mimic-cxr/val/val_report.csv"
+max_text_length: 512
+
+
+# 模型设置
+feature_dim: 512
+hidden_dim: 512
+num_time_steps: 5
+temperature: 0.1
+
+# 训练设置
+batch_size: 14
+num_workers: 64
+epochs: 100
+learning_rate: 1e-4
+lr_scheduler: "cosine"  # 使用余弦退火调度器
+weight_decay: 1e-4
+grad_clip: 1.0
+hard_negative_ratio: 0.3
+early_stop_patience: 100
+
+# 评估设置
+eval_interval: 1
+save_interval: 5
+log_interval: 10

@@ -1,0 +1,15 @@
+# 模型设置 - 与训练时保持一致
+feature_dim: 512
+hidden_dim: 512
+num_time_steps: 5
+temperature: 0.1
+
+# 数据设置
+max_text_length: 512
+# val_image_dir: "../dataset/mimic-cxr/val/images"
+# val_report_file: "../dataset/mimic-cxr/val/val_report.csv"
+val_image_dir: "../dataset/mimic-cxr/test/images"
+val_report_file: "../dataset/mimic-cxr/test/test_report.csv"
+# 评估设置
+batch_size: 64  # 评估时可以适当增大
+num_workers: 64  # 根据实际CPU数量调整
